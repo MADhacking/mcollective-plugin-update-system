@@ -1,6 +1,6 @@
 module MCollective
   module Agent
-    class UpdateSystem<RPC::Agent
+    class Updatesystem<RPC::Agent
       action "update" do
 		reply[:status] = run("update-system -q")
       end
