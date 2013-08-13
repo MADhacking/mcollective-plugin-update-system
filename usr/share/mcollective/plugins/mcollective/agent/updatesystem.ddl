@@ -12,7 +12,7 @@ action "update", :description => "Updates the system to the latest packages" do
 	display :always
 	
 	output  :status,
-			:description => "The status of the update"
-			:display_as	 => "Update Status"
+			:description => "The status of the update",
+			:display_as	 => "Update Status",
 			:default	 => "unknown"
 end
