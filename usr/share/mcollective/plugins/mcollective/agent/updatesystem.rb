@@ -8,10 +8,10 @@ module MCollective
   		reply[:status] = run("/usr/sbin/restart-mcollectived")
       end
       action "restart-system" do
-        reply[:status] = run("/sbin/shutdown -r 30")
+        reply[:status] = run("/sbin/shutdown -r now")
       end
 	  action "shutdown-system" do
-	    reply[:status] = run("/sbin/shutdown -h 30")
+	    reply[:status] = run("/sbin/shutdown -h now")
       end
     end
   end
