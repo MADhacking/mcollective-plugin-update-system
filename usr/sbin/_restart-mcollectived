@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sleep 30
+/etc/init.d/mcollectived restart >/dev/null

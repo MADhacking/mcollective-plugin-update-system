@@ -16,3 +16,30 @@ action "update", :description => "Updates the system to the latest packages" do
 			:display_as	 => "Update Status",
 			:default	 => "unknown"
 end
+
+action "restart-mcd", :description => "Restarts the MCollective daemon" do
+	display :always
+	
+	output  :status,
+			:description => "The status of the restart",
+			:display_as	 => "Restart Status",
+			:default	 => "unknown"
+end
+
+action "restart-system", :description => "Restarts the system (using shutdown -r)" do
+	display :always
+	
+	output  :status,
+			:description => "The status of the restart",
+			:display_as	 => "Restart Status",
+			:default	 => "unknown"
+end
+
+action "shutdown-system", :description => "Shuts down the system (using shutdown -h)" do
+	display :always
+	
+	output  :status,
+			:description => "The status of the restart",
+			:display_as	 => "Restart Status",
+			:default	 => "unknown"
+end
